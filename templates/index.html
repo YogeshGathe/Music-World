@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block body %}
+<div class="container-fluid px-0"> 
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/900x390/?music,classical_music" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explor Music</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/900x390/?guitar,guitarist" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explor Guitar</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/900x390/?singer,singing" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explor Singing</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div></div>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="my-4">Available Courses:</h>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/static/card1.jpg" class="card-img-top" alt="..." width="200" height="300">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px">Indian Classical Singing</h5>
+            <p class="card-text" style="font-size: 15px">This course will help you to learn the Indian Classical Music. It includes lessons on Raag, Taane, Thumari, etc.</p>
+            <a href="/card1" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/card2.png" class="card-img-top" alt="..." width="200" height="300">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px">Bollywood Singing</h5>
+            <p class="card-text" style="font-size: 15px">This course will help you to learn light/semi-classical indian bollywood and non-filmi songs. It includes Famous Hindi Songs, Ghazals, Qawwalies, etc.</p>
+            <a href="/card2" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/card3.jpg" class="card-img-top" alt="..." width="200" height="300">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px">Basic Guitar Lesson</h5>
+            <p class="card-text" style="font-size: 15px">This is course is designed for a complete beginner. It will teach you Basics of Guitar, Open Chords, Strumming, etc.</p>
+            <a href="/card3" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/card4.jpg" class="card-img-top" alt="..." width="200" height="300">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px">Advanced Guitar Lesson</h5>
+            <p class="card-text" style="font-size: 15px">This course is for intermidiate Guitarists who wants to learn advanced techniques to improve their playing.</p>
+            <a href="/card4" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock body %}

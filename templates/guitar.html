@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+
+
+{% block body %}
+<div class="container my-5">
+  <h1 class="my-4">Available Courses:</h>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/static/card3.jpg" class="card-img-top" alt="..." width="200" height="300">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 25px">Basic Guitar Lesson</h5>
+          <p class="card-text" style="font-size: 15px">This is course is designed for a complete beginner. It will teach you Basics of Guitar, Open Chords, Strumming, etc.</p>
+          <a href="/card3" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/static/card4.jpg" class="card-img-top" alt="..." width="200" height="300">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 25px">Advanced Guitar Lesson</h5>
+          <p class="card-text" style="font-size: 15px">This course is for intermidiate Guitarists who wants to learn advanced techniques to improve their playing.</p>
+          <a href="/card4" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+{% endblock body %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+
+
+{% block body %}
+<div class="container my-5">
+  <h1 class="my-4">Available Courses:</h>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/static/card1.jpg" class="card-img-top" alt="..." width="200" height="300">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 25px">Indian Classical Singing</h5>
+          <p class="card-text" style="font-size: 15px">This course will help you to learn the Indian Classical Music. It includes lessons on Raag, Taane, Thumari, etc.</p>
+          <a href="/card1" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/static/card2.png" class="card-img-top" alt="..." width="200" height="300">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 25px">Bollywood Singing</h5>
+          <p class="card-text" style="font-size: 15px">This course will help you to learn light/semi-classical indian bollywood and non-filmi songs. It includes Famous Hindi Songs, Ghazals, Qawwalies, etc.</p>
+          <a href="/card2" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+{% endblock body %}

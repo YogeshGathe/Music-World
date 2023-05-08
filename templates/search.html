@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock title %}
+
+
+{% block body %}
+<main class="container">
+    <h3 class="my-3">Here's the link to guitar chords of the song <u>{{search}}<u/>:</h3>
+    {%if data%}
+        <a class="link" href="{{data}}" target=”_blank”>Click here!</a>
+    {% endif %}
+</main>
+
+{% endblock body %}

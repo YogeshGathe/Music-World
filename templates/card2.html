@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Bollywood Singing{% endblock title %}
+
+{%  block body %}
+{% if user.is_authenticated %}
+  <div class="col">
+          <div class="card-body">
+          <h5 class="card-title" style="font-size: 25px">Bollywood Singing</h5>
+          <p class="card-text" style="font-size: 15px">This course will help you to learn light/semi-classical indian bollywood and non-filmi songs. It includes Famous Hindi Songs, Ghazals, Qawwalies, etc.</p>
+          </div>
+  </div>
+
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/watch?v=GibiNy4d4gc">
+  </iframe>
+{% else %}
+<h1>Please register or log-in to check-out our courses:</h>
+  <a class="btn btn-primary" href="/login" role="button">Log In!</a>
+  <a class="btn btn-primary" href="/register" role="button">Register!</a>
+{% endif %}
+{% endblock body %}
